@@ -1,0 +1,47 @@
+extends layout
+ 
+block title
+ 
+ .main-header
+ 
+ 
+block content
+ 
+ .welcome
+  h2 Welcome to #{title} 
+  
+ div.login
+  h1 scheduled marine maintenance 
+  script(url="/javascripts/maintain.js")
+   button.btn(onclick data-action="bea" ) CAPTAINS LOGin 
+   
+ div.feature
+    img(src="/images/Kaya_BrownsBay.jpg")
+    p Kaya at Browns Bay, Abel Tasman National Park
+ 
+ 
+ 
+ .navbar
+   
+  div.navbar.navbar-inverse()
+   div.navbar-inner()
+    div.container()
+     a.brand(url="")
+     div.nav-collapse()
+      ul.nav
+       li
+        a(url="example-schedule.js") Schedule
+       li
+        a(url="/calender.js/") Calender
+       li
+        a(href="http://www.marineweather.com") Weather
+       li
+        a(href="mailto:seasoundnz@gmail.com") Contact
+      div.content()
+      div.footer()
+     
+ div.widget
+  img(width="344" height="218" id="chartpic" name="chartpic" alt="" src="http://www.marineweather.co.nz//incoming/RegionLarge/OCEAN_Wind_20160902AM.png")
+  a.twitter-timeline(href="https://twitter.com/seasoundnz") Tweets by seasoundnz
+   script.async(src="//platform.twitter.com/widgets.js" charset="utf-8")
+  
